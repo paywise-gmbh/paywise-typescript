@@ -1,0 +1,345 @@
+{
+  "name": "@paywise/sdk",
+  "version": "0.1.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paywise-gmbh/paywise-typescript.git"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.mts",
+        "default": "./dist/esm/index.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      },
+      "default": "./dist/cjs/index.js"
+    },
+    "./caseManagement": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/exports.js"
+    },
+    "./caseManagement/claims": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/claims/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/claims/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/claims/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/claims/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/claims/exports.js"
+    },
+    "./caseManagement/documents": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/documents/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/documents/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/documents/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/documents/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/documents/exports.js"
+    },
+    "./caseManagement/debtors": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/debtors/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/debtors/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/debtors/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/debtors/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/debtors/exports.js"
+    },
+    "./caseManagement/events": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/events/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/events/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/events/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/events/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/events/exports.js"
+    },
+    "./caseManagement/health": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/health/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/health/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/health/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/health/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/health/exports.js"
+    },
+    "./caseManagement/info": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/info/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/info/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/info/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/info/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/info/exports.js"
+    },
+    "./caseManagement/legalForms": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/legalForms/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/legalForms/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/legalForms/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/legalForms/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/legalForms/exports.js"
+    },
+    "./caseManagement/mandates": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/mandates/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/mandates/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/mandates/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/mandates/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/mandates/exports.js"
+    },
+    "./caseManagement/orders": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/orders/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/orders/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/orders/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/orders/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/orders/exports.js"
+    },
+    "./caseManagement/payments": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/payments/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/payments/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/payments/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/payments/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/payments/exports.js"
+    },
+    "./caseManagement/singleMandateStatements": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/singleMandateStatements/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/singleMandateStatements/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/singleMandateStatements/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/singleMandateStatements/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/singleMandateStatements/exports.js"
+    },
+    "./caseManagement/statements": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/statements/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/statements/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/statements/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/statements/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/statements/exports.js"
+    },
+    "./caseManagement/usage": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/usage/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/usage/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/usage/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/usage/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/usage/exports.js"
+    },
+    "./caseManagement/webhookDeliveries": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/webhookDeliveries/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/webhookDeliveries/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/webhookDeliveries/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/webhookDeliveries/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/webhookDeliveries/exports.js"
+    },
+    "./caseManagement/webhooks": {
+      "import": {
+        "types": "./dist/esm/api/resources/caseManagement/resources/webhooks/exports.d.mts",
+        "default": "./dist/esm/api/resources/caseManagement/resources/webhooks/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/caseManagement/resources/webhooks/exports.d.ts",
+        "default": "./dist/cjs/api/resources/caseManagement/resources/webhooks/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/caseManagement/resources/webhooks/exports.js"
+    },
+    "./partner": {
+      "import": {
+        "types": "./dist/esm/api/resources/partner/exports.d.mts",
+        "default": "./dist/esm/api/resources/partner/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/partner/exports.d.ts",
+        "default": "./dist/cjs/api/resources/partner/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/partner/exports.js"
+    },
+    "./partner/companies": {
+      "import": {
+        "types": "./dist/esm/api/resources/partner/resources/companies/exports.d.mts",
+        "default": "./dist/esm/api/resources/partner/resources/companies/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/partner/resources/companies/exports.d.ts",
+        "default": "./dist/cjs/api/resources/partner/resources/companies/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/partner/resources/companies/exports.js"
+    },
+    "./partner/companyUsers": {
+      "import": {
+        "types": "./dist/esm/api/resources/partner/resources/companyUsers/exports.d.mts",
+        "default": "./dist/esm/api/resources/partner/resources/companyUsers/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/partner/resources/companyUsers/exports.d.ts",
+        "default": "./dist/cjs/api/resources/partner/resources/companyUsers/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/partner/resources/companyUsers/exports.js"
+    },
+    "./partner/events": {
+      "import": {
+        "types": "./dist/esm/api/resources/partner/resources/events/exports.d.mts",
+        "default": "./dist/esm/api/resources/partner/resources/events/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/partner/resources/events/exports.d.ts",
+        "default": "./dist/cjs/api/resources/partner/resources/events/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/partner/resources/events/exports.js"
+    },
+    "./partner/meta": {
+      "import": {
+        "types": "./dist/esm/api/resources/partner/resources/meta/exports.d.mts",
+        "default": "./dist/esm/api/resources/partner/resources/meta/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/partner/resources/meta/exports.d.ts",
+        "default": "./dist/cjs/api/resources/partner/resources/meta/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/partner/resources/meta/exports.js"
+    },
+    "./partner/legalForms": {
+      "import": {
+        "types": "./dist/esm/api/resources/partner/resources/legalForms/exports.d.mts",
+        "default": "./dist/esm/api/resources/partner/resources/legalForms/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/partner/resources/legalForms/exports.d.ts",
+        "default": "./dist/cjs/api/resources/partner/resources/legalForms/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/partner/resources/legalForms/exports.js"
+    },
+    "./partner/usage": {
+      "import": {
+        "types": "./dist/esm/api/resources/partner/resources/usage/exports.d.mts",
+        "default": "./dist/esm/api/resources/partner/resources/usage/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/partner/resources/usage/exports.d.ts",
+        "default": "./dist/cjs/api/resources/partner/resources/usage/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/partner/resources/usage/exports.js"
+    },
+    "./partner/webhookDeliveries": {
+      "import": {
+        "types": "./dist/esm/api/resources/partner/resources/webhookDeliveries/exports.d.mts",
+        "default": "./dist/esm/api/resources/partner/resources/webhookDeliveries/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/partner/resources/webhookDeliveries/exports.d.ts",
+        "default": "./dist/cjs/api/resources/partner/resources/webhookDeliveries/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/partner/resources/webhookDeliveries/exports.js"
+    },
+    "./partner/webhooks": {
+      "import": {
+        "types": "./dist/esm/api/resources/partner/resources/webhooks/exports.d.mts",
+        "default": "./dist/esm/api/resources/partner/resources/webhooks/exports.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/api/resources/partner/resources/webhooks/exports.d.ts",
+        "default": "./dist/cjs/api/resources/partner/resources/webhooks/exports.js"
+      },
+      "default": "./dist/cjs/api/resources/partner/resources/webhooks/exports.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "reference.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "format": "biome format --write --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+    "format:check": "biome format --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+    "lint": "biome lint --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+    "lint:fix": "biome lint --fix --unsafe --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+    "check": "biome check --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+    "check:fix": "biome check --fix --unsafe --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+    "build": "pnpm build:cjs && pnpm build:esm",
+    "build:cjs": "tsc --project ./tsconfig.cjs.json",
+    "build:esm": "tsc --project ./tsconfig.esm.json && node scripts/rename-to-esm-files.js dist/esm",
+    "test": "vitest",
+    "test:unit": "vitest --project unit",
+    "test:wire": "vitest --project wire"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.105.4",
+    "ts-loader": "^9.5.4",
+    "vitest": "^4.1.1",
+    "msw": "2.11.2",
+    "@types/node": "^20.0.0",
+    "typescript": "~5.9.3",
+    "@biomejs/biome": "2.4.10"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false,
+    "stream": false,
+    "crypto": false
+  },
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "sideEffects": false
+}
