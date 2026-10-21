@@ -1,0 +1,11 @@
+{
+  "cliVersion": "5.159.1",
+  "generatorName": "fernapi/fern-typescript-sdk",
+  "generatorVersion": "3.107.2",
+  "generatorConfig": {
+    "namespaceExport": "Paywise"
+  },
+  "invokedBy": "manual",
+  "requestedVersion": "0.1.0",
+  "sdkVersion": "0.1.0"
+}
